@@ -1,9 +1,9 @@
 export interface Cuota {
-  mes: number;
-  cuota: number;
+  numero: number;
+  montoCuota: number;
   interes: number;
   capital: number;
-  saldo: number;
+  saldoPendiente: number;
 }
 
 export interface Prestamo {
@@ -14,12 +14,16 @@ export interface Prestamo {
 }
 
 export interface Cliente {
-  dni: string;
   nombre: string;
-  prestamo: Prestamo;
-}
-
-export interface Usuario {
-  user: string;
-  pass: string;
+  dni: string;
+  edad: number;      // <--- ESTO ES LO QUE FALTA
+  ocupacion: string; // <--- ESTO ES LO QUE FALTA
+  sueldo: number;    // <--- ESTO ES LO QUE FALTA
+  fechaRegistro?: Date;
+  prestamo: {
+    monto: number;
+    tasaAnual: number;
+    meses: number;
+    cronograma: Cuota[];
+  };
 }
