@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 bg-dark text-white min-vh-100 p-3" *ngIf="authService.isLoggedIn()">
+      <h4 class="border-bottom pb-3 mb-4">Sistema BCP</h4>
+      <div class="nav flex-column">
+        <a routerLink="/registro" class="nav-link text-white-50" routerLinkActive="active">Nuevo Préstamo</a>
+        <a routerLink="/clientes" class="nav-link text-white-50" routerLinkActive="active">Cartera</a>
+        <button (click)="authService.logout()" class="btn btn-outline-danger btn-sm mt-5">Cerrar Sesión</button>
+      </div>
+    </div>
+
+    <div [className]="authService.isLoggedIn() ? 'col-md-10 p-4' : 'col-md-12 p-4'">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

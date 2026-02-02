@@ -1,0 +1,17 @@
+<div class="card p-4 mx-auto shadow mt-5" style="max-width:400px;">
+    <h4 class="text-center mb-4 fw-bold">Crear Cuenta</h4>
+    
+    <div class="mb-3">
+        <input type="text" [(ngModel)]="nuevoUsuario" class="form-control" placeholder="Elige un usuario">
+    </div>
+    
+    <div class="mb-3">
+        <input type="password" [(ngModel)]="nuevaClave" class="form-control" placeholder="Crea una contraseña">
+    </div>
+
+    <button class="btn btn-success w-100 mb-3" (click)="crearCuenta()">Registrar Usuario</button>
+    
+    <p class="text-center mb-0">
+        <a routerLink="/login" class="text-decoration-none">Volver al login</a>
+    </p>
+</div>

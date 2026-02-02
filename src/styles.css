@@ -1,0 +1,13 @@
+/* src/styles.css */
+
+/* Importación de Bootstrap para el diseño (la que ya tienes) */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Importación de Bootstrap Icons para los iconos (AÑADE ESTA) */
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* Estilos globales opcionales para que se vea más profesional */
+body {
+    background-color: #f4f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

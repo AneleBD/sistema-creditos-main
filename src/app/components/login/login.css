@@ -1,0 +1,47 @@
+.login-wrapper {
+  background: linear-gradient(135deg, #002a5d 0%, #004b98 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.bcp-logo {
+  color: #fb8500; /* Naranja BCP */
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+.bcp-logo span { color: #002a5d; }
+
+.btn-bcp {
+  background-color: #fb8500;
+  border: none;
+  color: white;
+}
+
+.btn-bcp:hover {
+  background-color: #e67a00;
+  transform: translateY(-1px);
+}
+
+.btn-show-pass {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  background: none;
+  border: none;
+  color: #6c757d;
+  z-index: 10;
+}
+
+.register-link { color: #002a5d; }
